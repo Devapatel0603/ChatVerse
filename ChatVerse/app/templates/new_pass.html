@@ -1,0 +1,45 @@
+{% extends "common.html" %}
+{% block content %}
+
+<section class="login">
+    <div class="loginImg">
+        <img src="{{ url_for('static', filename='images/ai.webp') }}" alt=""/>
+    </div>
+    
+    <div class="content">
+    
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% endif %}
+            {% endwith %}
+        
+        <form action="/new_pass" class="loginform" method="POST">
+            {{ form.hidden_tag() }}
+           
+            
+            <div class="password margin-top">
+                {% if form.password.errors %}
+                    {{ form.password(class="pass-form", placeholder="New Password") }}
+                    <div class="invalid">
+                        {% for error in form.password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password(class="pass-form", placeholder="New Password") }}
+                {% endif %}
+            </div>
+
+            <div>
+                {{ form.submit(class="btn margin-bottom") }}
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock content %}
