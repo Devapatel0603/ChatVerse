@@ -53,7 +53,7 @@ def register():
 
         global otp
         otp = randint(100000,999999)
-        msg = Message("Email Verification", sender='devapatel0603@outlook.com', recipients=[email])
+        msg = Message("Email Verification", sender='chatverse@outlook.com', recipients=[email])
         msg.body = f"Hello {username}, \nWelcome to ChatVerse Your OTP is {str(otp)}"
         mail.send(msg)
 
@@ -154,7 +154,7 @@ def forgot():
         if user:
             global otp2
             otp2 = randint(100000,999999)
-            msg = Message("Email Verification", sender='devapatel0603@outlook.com', recipients=[emails])
+            msg = Message("Email Verification", sender='chatverse@outlook.com', recipients=[emails])
             msg.body = f"Hello, \nWelcome to ChatVerse Your OTP is {str(otp2)}"
             mail.send(msg)
             return redirect(url_for('forgot_email_verify'))
