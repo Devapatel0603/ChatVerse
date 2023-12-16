@@ -15,4 +15,3 @@ class Message(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(20), unique=False, nullable=False)
     email = db.Column(db.String(20), unique=False, nullable=False)
-    message = db.Column(db.Text(500), unique=False, nullable=False)
