@@ -10,8 +10,8 @@ from flask_mail import Message
 
 cookie_dict = {
     "__Secure-1PSID": "dwiSAnJPsk7GpAVJfDFx8ZYR8pdiz6XFdcECmWCDhnd8RA2D2WqyKiUJI2O38Wml6FfsxA.",
-    "__Secure-1PSIDTS": "sidts-CjEBPVxjSlj2FLdwMoyxNf-3SpnRRNzfjM-INmt54LTlOLGXt6asWFwd1nh3eO2jU6yVEAA",
-    "__Secure-1PSIDCC": "ABTWhQF_a3qzbrLXiZkJa8fQ9IqobWeY5B6QXOTtPmvctUD8Imbjo6UrGfPwpAgWLlVwbbeE84M"
+    "__Secure-1PSIDTS": "sidts-CjEBPVxjSlptUMuCwi0QfMxmnaIi8GZB93K2iCvbMS86OKkDgMXlhY_WZST3YwGaqoN1EAA",
+    "__Secure-1PSIDCC": "ABTWhQFErwY_K2SizP4ZxuT_grdddcu9tzUBZcgCoMVBCzyZF5ZUvy9aAFq61Mf5dMhylDT8DZY"
 }
 
 
