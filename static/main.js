@@ -1,3 +1,11 @@
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};  
+
 var form = document.getElementById('sheetdb-form');	  
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -10,12 +18,3 @@ form.addEventListener('submit', e => {
         window.location.reload(); 
     })
 })
-
-
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};  
