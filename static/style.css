@@ -1037,6 +1037,7 @@ ion-icon {
 
   .loginImg{
     position: absolute;
+    width: 0%;
   }
 
   .login .loginform{
