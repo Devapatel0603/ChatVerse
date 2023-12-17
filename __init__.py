@@ -9,7 +9,7 @@ from authlib.integrations.flask_client import OAuth
 local_server = True
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '63dde047970e7b76e653'
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://chatverse_scrk_user:aOETrGR54m4QXP57ruGxjsdaaKM2uKvN@dpg-clv8gd5a73kc73bnblk0-a/chatverse_scrk"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://chatverse_ftz2_user:Vk3nTcoWIzLCjPMUxd73qWBaWSkV3e8y@dpg-clv9damd3nmc738am1lg-a/chatverse_ftz2"
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
