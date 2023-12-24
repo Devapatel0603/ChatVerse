@@ -16,11 +16,15 @@ try:
      
     bard = BardCookies(cookie_dict=cookie_dict)
     
-    def get_response(prompt):
-        response = bard.get_answer(prompt)['content']
-        return response
 except:
     response = "Site currenty on maintenance"
+
+def get_response(prompt):
+    try:
+        response = bard.get_answer(prompt)['content']
+    except:
+        response = "Site currenty on maintenance"
+    return response
 
 
 @app.route('/')
