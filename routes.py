@@ -7,20 +7,20 @@ from bardapi import SESSION_HEADERS, Bard, BardCookies
 from random import randint
 from flask_mail import Message
 
-
-cookie_dict = {
-    "__Secure-1PSID": "dwiSAnJPsk7GpAVJfDFx8ZYR8pdiz6XFdcECmWCDhnd8RA2D2WqyKiUJI2O38Wml6FfsxA.",
-    "__Secure-1PSIDTS": "sidts-CjEBPVxjSnt8q30fGdu7zfNLxzb7mBTTJsUBK7TlTihrwMubVTg4v7JczqdWBo2OVinZEAA",
-    "__Secure-1PSIDCC": "ABTWhQGCVY2BWHreY8RC3MVWgzt8tgL4fdTJ4Pyvx-Ov-_27CKnsc4xyiCpKyPM8f74J_dbXexI"
-}
-
-
-
-bard = BardCookies(cookie_dict=cookie_dict)
-
-def get_response(prompt):
-    response = bard.get_answer(prompt)['content']
-    return response
+try:
+    cookie_dict = {
+        "__Secure-1PSID": "dwiSAnJPsk7GpAVJfDFx8ZYR8pdiz6XFdcECmWCDhnd8RA2D2WqyKiUJI2O38Wml6FfsxA.",
+        "__Secure-1PSIDTS": "sidts-CjEBPVxjSnt8q30fGdu7zfNLxzb7mBTTJsUBK7TlTihrwMubVTg4v7JczqdWBo2OVinZEAA",
+        "__Secure-1PSIDCC": "ABTWhQGCVY2BWHreY8RC3MVWgzt8tgL4fdTJ4Pyvx-Ov-_27CKnsc4xyiCpKyPM8f74J_dbXexI"
+    }
+     
+    bard = BardCookies(cookie_dict=cookie_dict)
+    
+    def get_response(prompt):
+        response = bard.get_answer(prompt)['content']
+        return response
+except:
+    response = "Site currenty on maintenance"
 
 
 @app.route('/')
