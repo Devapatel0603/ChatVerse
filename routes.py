@@ -11,7 +11,7 @@ try:
     cookie_dict = {
         "__Secure-1PSID": "dwiSAnJPsk7GpAVJfDFx8ZYR8pdiz6XFdcECmWCDhnd8RA2D2WqyKiUJI2O38Wml6FfsxA.",
         "__Secure-1PSIDTS": "sidts-CjEBPVxjSuwZSgAc9_GgcWnADOrTvGKetF9LePpWdnJYmzRQNBz0Uwxea0e_fUymbajREAA",
-        "__Secure-1PSIDCC": "ABTWhQEN_nGOSwbPFQ4sK601_acKXNuftUAttinWk3b0URGgnNtQH2sjyQ6-F5rfFZUiTPfLo5M"
+        "__Secure-1PSIDCC": "ABTWhQFlqToO7fVmp7go_I0-HV3XxQSEunc8c8SxmzswAtWkAFcMvUEGWOKTJWQVkK4k72_RTmI"
     }
      
     bard = BardCookies(cookie_dict=cookie_dict)
