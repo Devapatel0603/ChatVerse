@@ -10,8 +10,8 @@ from flask_mail import Message
 try:
     cookie_dict = {
         "__Secure-1PSID": "dwiSAnJPsk7GpAVJfDFx8ZYR8pdiz6XFdcECmWCDhnd8RA2D2WqyKiUJI2O38Wml6FfsxA.",
-        "__Secure-1PSIDTS": "sidts-CjEBPVxjSuwZSgAc9_GgcWnADOrTvGKetF9LePpWdnJYmzRQNBz0Uwxea0e_fUymbajREAA",
-        "__Secure-1PSIDCC": "ABTWhQFlqToO7fVmp7go_I0-HV3XxQSEunc8c8SxmzswAtWkAFcMvUEGWOKTJWQVkK4k72_RTmI"
+        "__Secure-1PSIDTS": "sidts-CjEBPVxjSlNSU5YY_H5WlW95MRXaMnkD7MajR6xrLznjtwNVSJ88az_T2zXNsvYcC27tEAA",
+        "__Secure-1PSIDCC": "ABTWhQE9SM1VnDK0951Vz_xZ4Z-nwBOAqK08ykV2P38J_IR_AFNjw86Bzjb8mUms2X1svFK2mjo"
     }
      
     bard = BardCookies(cookie_dict=cookie_dict)
