@@ -89,7 +89,7 @@ def login():
 
 
     
-@app.route('/email_verify', methods = ['POST'])
+@app.route('/email_verify', methods = ['GET','POST'])
 def email_verify():
     if request.method == 'POST':
         user_otp = request.form.get('oth')
@@ -130,7 +130,7 @@ def clone():
         return render_template("clone.html")
 
 
-@app.route('/forgot_email_verify', methods = ['POST'])
+@app.route('/forgot_email_verify', methods = ['GET','POST'])
 def forgot_email_verify():
     if request.method == 'POST':
         user_otp = request.form.get('oth2')
@@ -143,7 +143,7 @@ def forgot_email_verify():
     return render_template("forgot_email_verify.html")
 
 
-@app.route('/forgot', methods = ['POST'])
+@app.route('/forgot', methods = ['GET','POST'])
 def forgot():
     form = ForgotEmailForm()
     if request.method == 'POST' and form.validate_on_submit():
@@ -164,7 +164,7 @@ def forgot():
     return render_template("forgot.html", form=form)
 
 
-@app.route('/new_pass', methods = ['POST'])
+@app.route('/new_pass', methods = ['GET','POST'])
 def new_pass():
     form = NewPasswordForm()
     if request.method == 'POST' and form.validate_on_submit():
