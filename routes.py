@@ -3,28 +3,23 @@ from __init__ import app, db, bcrypt, mail
 from models import Users
 from form import RegistrationForm, LoginForm, ForgotEmailForm, NewPasswordForm, MessageForm
 from flask_login import login_user, current_user, logout_user, login_required
-from bardapi import SESSION_HEADERS, Bard, BardCookies
 from random import randint
 from flask_mail import Message
+import pathlib
+import textwrap
+import google.generativeai as genai
+from IPython.display import display
+from IPython.display import Markdown
 
-try:
-    cookie_dict = {
-        "__Secure-1PSID": "ewiSAiHTzGQW7UukBDZ921GVSHeL03SjSRPGa0Emo1GQKKC86u1vvVgWhKzB2p42GIUC4w.",
-        "__Secure-1PSIDTS": "sidts-CjEBPVxjSg6pcfGytPh5Qljjroog5Ww5-3RJK0Vx9BXEKzT1_WdY9-g2ohFC6ljSeEBeEAA",
-        "__Secure-1PSIDCC": "ABTWhQGKWe25nsoMEbokbRYiAJTn0v3z8J8ScqBM1RJs-rJNBq8grs0HQDkXgbud_xFouC80a0Q"
-    }
-     
-    bard = BardCookies(cookie_dict=cookie_dict)
-    
-except:
-    response = "Site currenty on maintenance"
+GOOGLE_API_KEY="AIzaSyD2qe5rWACLngr5zLvbJAt4Y___hhSYSWw"
+
+genai.configure(api_key=GOOGLE_API_KEY)
+
+model = genai.GenerativeModel('gemini-pro')
 
 def get_response(prompt):
-    try:
-        response = bard.get_answer(prompt)['content']
-    except:
-        response = "Site currenty on maintenance"
-    return response
+    response = model.generate_content(prompt)
+    return response.text.replace('•', '  *')
 
 
 @app.route('/')
@@ -94,7 +89,7 @@ def login():
 
 
     
-@app.route('/email_verify', methods = ['GET', 'POST'])
+@app.route('/email_verify', methods = ['POST'])
 def email_verify():
     if request.method == 'POST':
         user_otp = request.form.get('oth')
@@ -135,7 +130,7 @@ def clone():
         return render_template("clone.html")
 
 
-@app.route('/forgot_email_verify', methods = ['GET', 'POST'])
+@app.route('/forgot_email_verify', methods = ['POST'])
 def forgot_email_verify():
     if request.method == 'POST':
         user_otp = request.form.get('oth2')
@@ -148,7 +143,7 @@ def forgot_email_verify():
     return render_template("forgot_email_verify.html")
 
 
-@app.route('/forgot', methods = ['GET', 'POST'])
+@app.route('/forgot', methods = ['POST'])
 def forgot():
     form = ForgotEmailForm()
     if request.method == 'POST' and form.validate_on_submit():
@@ -169,7 +164,7 @@ def forgot():
     return render_template("forgot.html", form=form)
 
 
-@app.route('/new_pass', methods = ['GET', 'POST'])
+@app.route('/new_pass', methods = ['POST'])
 def new_pass():
     form = NewPasswordForm()
     if request.method == 'POST' and form.validate_on_submit():
