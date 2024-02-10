@@ -13,11 +13,7 @@
         <div class='answer'>
           {% if response %}
             {% autoescape off %}
-              {{ response | replace("**", "<br><br>") | replace("*", "") | replace("1.", "") | replace("2.", "") | replace(" 1. **", "<br>") 
-              | replace(" 2. **", "<br>") | replace(" 3. **", "<br><br>") | replace(" 4. **", "<br>") 
-              | replace(" 5. **", "<br>") | replace(" 6. **", "<br>") | replace(" 7. **", "<br>") | replace("3.", "") 
-              | replace("4.", "")| replace("5.", "")| replace("6.", "")| replace("7.", "")| replace("8.", "")| replace("9.", "")| replace("10.", "")
-              | replace(" 8. **", "<br>") | replace(" 9. **", "<br>") | replace(" 10. **", "<br>") }}
+              {{ response }}
             {% endautoescape %}
           {% endif %}
         </div>
