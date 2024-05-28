@@ -7,7 +7,7 @@ Built with:
 - Flask for the Backend
 - HTML, CSS, and JS for the Frontend
 - MySQL for the Database
-- Google Bard API integration
+- Gemini API integration
  
 🌟 Features:
 1. 🔑 𝙾𝚃𝙿 𝚅𝚎𝚛𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗: Added security through OTP verification during the registration process.
