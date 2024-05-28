@@ -1,7 +1,7 @@
 🚀 𝕀𝕟𝕥𝕣𝕠𝕕𝕦𝕔𝕚𝕟𝕘 𝕞𝕪 𝕝𝕒𝕥𝕖𝕤𝕥 𝕡𝕣𝕠𝕛𝕖𝕔𝕥, ℂ𝕙𝕒𝕥𝕍𝕖𝕣𝕤𝕖! 🤖✨
  
 What is "ChatVerse"?
-"ChatVerse" is an AI chatbot similar to ChatGPT or Gemini. Here i use Gemini API.
+Discover ChatVerse, an innovative AI chatbot similar to ChatGPT and Gemini, powered by the Gemini API. Dive into the future of AI interaction with this cutting-edge conversational companion.
  
 Built with:
 - Flask for the Backend
