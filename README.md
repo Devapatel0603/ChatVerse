@@ -16,7 +16,7 @@ Built with:
  
 3. 🔒 𝙵𝚘𝚛𝚐𝚘𝚝 𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍: Empowering users to change their passwords for enhanced security.
  
-4. 🚀 Gemini 𝙰𝙿𝙸 𝙸𝚗𝚝𝚎𝚐𝚛𝚊𝚝𝚒𝚘𝚗: Accessing the power of Google Bard for enhanced conversational capabilities.
+4. 🚀 Gemini 𝙰𝙿𝙸 𝙸𝚗𝚝𝚎𝚐𝚛𝚊𝚝𝚒𝚘𝚗: Accessing the power of Gemini for enhanced conversational capabilities.
  
 5. 🗣 𝚂𝚖𝚊𝚛𝚝 𝙲𝚘𝚗𝚟𝚎𝚛𝚜𝚊𝚝𝚒𝚘𝚗𝚜: Engage in natural and intelligent conversations with ChatVerse's advanced language processing.
  
