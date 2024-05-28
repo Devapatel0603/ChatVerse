@@ -40,12 +40,3 @@ class NewPasswordForm(FlaskForm):
     password = PasswordField('Password',
                              validators=[DataRequired()])
     submit = SubmitField('SUBMIT')
-
-class MessageForm(FlaskForm):
-    name = StringField('Name',
-                           validators=[DataRequired()])
-    email = StringField('Email Address',
-                        validators=[DataRequired(), Email()])
-    message = StringField('Message',
-                          validators=[DataRequired()])
-    submit = SubmitField('SUBMIT')
