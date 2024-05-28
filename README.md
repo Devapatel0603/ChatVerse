@@ -1,7 +1,7 @@
 🚀 𝕀𝕟𝕥𝕣𝕠𝕕𝕦𝕔𝕚𝕟𝕘 𝕞𝕪 𝕝𝕒𝕥𝕖𝕤𝕥 𝕡𝕣𝕠𝕛𝕖𝕔𝕥, ℂ𝕙𝕒𝕥𝕍𝕖𝕣𝕤𝕖! 🤖✨
  
 What is "ChatVerse"?
-"ChatVerse" is a clone of "Google Bard," an AI chatbot similar to ChatGPT. After hearing about "ChatGPT," there's no need for more explanation about my project. 😁
+"ChatVerse" is an AI chatbot similar to ChatGPT or Gemini. Here i use Gemini API.
  
 Built with:
 - Flask for the Backend
@@ -16,7 +16,7 @@ Built with:
  
 3. 🔒 𝙵𝚘𝚛𝚐𝚘𝚝 𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍: Empowering users to change their passwords for enhanced security.
  
-4. 🚀 𝙶𝚘𝚘𝚐𝚕𝚎 𝙱𝚊𝚛𝚍 𝙰𝙿𝙸 𝙸𝚗𝚝𝚎𝚐𝚛𝚊𝚝𝚒𝚘𝚗: Accessing the power of Google Bard for enhanced conversational capabilities.
+4. 🚀 Gemini 𝙰𝙿𝙸 𝙸𝚗𝚝𝚎𝚐𝚛𝚊𝚝𝚒𝚘𝚗: Accessing the power of Google Bard for enhanced conversational capabilities.
  
 5. 🗣 𝚂𝚖𝚊𝚛𝚝 𝙲𝚘𝚗𝚟𝚎𝚛𝚜𝚊𝚝𝚒𝚘𝚗𝚜: Engage in natural and intelligent conversations with ChatVerse's advanced language processing.
  
